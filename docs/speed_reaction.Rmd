@@ -2,7 +2,7 @@
 title: "Carnet de Laboratoire : Vitesse de réaction chimique"
 author: '...'
 date: "..."
-output: html_notebook
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -29,7 +29,7 @@ $$ ... $$
 
 <!-- Modélisation et description des différentes étapes. -->
 
-```{r Modèle }
+```{r modele}
 
 ```
 

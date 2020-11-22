@@ -9,21 +9,26 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 SciViews::R
 ```
+
 ## Avant-propos
 
 Les consignes sont reprises dans ce document, ainsi que sous forme de commentaires dans les différents fichiers. Elles sont susceptibles d'évoluer. N'hésitez pas à vérifier le lien suivant afin de voir si des modifications n'y ont pas été apportées : https://github.com/BioDataScience-Course/B04Ga_speed-reaction
 
-## Contexte
+## Objectif
+
+Ce projet est un projet *court*, *cadré*, *individuel* et qui doit être **terminé pour la fin du module 4**. Il permet de nous démontrer que vous avez acquis les compétences suivantes :
+
+- être capable de définir des valeurs de départ plausibles pour les paramètres d'un modèle
+- être capable d'utiliser la fonction nls()
+
+
+## Consignes
 
 ```{r}
 speed <- read("data/reaction.rds")
 ```
 
-Des scientifiques ont déterminé la vitesse d'une réaction chimique en fonction de la concentration en substrat. Le jeu de données (`reaction.rds`) mis à votre disposition et détaillé ci-dessous se trouve dans le dossier `data`.
-
-```{r}
-skimr::skim(speed)
-```
+Des scientifiques ont déterminé la vitesse d'une réaction chimique en fonction de la concentration en substrat. Le jeu de données (`reaction.rds`) mis à votre disposition dans le dossier `data`.
 
 Avec ces données, le graphique ci-dessous, qui sera la base de votre recherche, a été réalisé. Les scientifiques ont maintenant besoin de vous pour déterminer les paramètres de la régression non linéaire.
 
@@ -32,19 +37,9 @@ chart(speed, speed ~ conc) +
   geom_point()
 ```
 
-## Objectif
-
-Ce projet est un projet **individuel**, **court** et **cadré** qui doit être **terminé pour la fin du module 4**.
-
 Dans le cadre de cet exercice, vous devez analyser la situation mise à votre disposition et consignez vos résultats sous la forme d'un carnet de laboratoire au format Rmd. Ce document, nommé `speed_reaction.Rmd`, se trouve dans le dossier `docs`.
 
 Afin de cadrer votre recherche, tentez de réaliser une régression non linéaire qui suit l'équation proposée par Michaelis-Menten.
-
-La courbe de Michaelis-Menten, bien connue pour modéliser des cinétiques chimiques simples dont certaines réactions enzymatiques, suit l'équation suivante\ :
-
-$$V = \frac{V_{max} * conc}{K + conc}$$
-
-où $conc$ est la concentration en mol/L des réactifs au début de la réaction, c'est-à-dire en absence du produit de cette réaction, $V$ est la vitesse de réaction en mol/min. Ce modèle a deux paramètres $V_{max}$ la vitesse maximale asymptotique en mol/min et $K$ en mol/L correspondant à la concentration telle que la vitesse est la moitié de $V_{max}$.  
 
 Votre carnet de laboratoire doit débuter par une courte introduction sur l'équation de Michaelis-Menten (ajoutez-y l'équation). Vous devez ensuite décrire les différentes étapes que vous allez réaliser.
 
