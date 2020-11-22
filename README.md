@@ -17,8 +17,6 @@ Ce projet est un projet *court*, *cadré*, *individuel* et qui doit être
 **terminé pour la fin du module 4**. Il permet de nous démontrer que
 vous avez acquis les compétences suivantes :
 
-  - être capable de définir des valeurs de départ plausibles pour les
-    paramètres d’un modèle
   - être capable d’utiliser la fonction nls()
 
 ## Consignes
