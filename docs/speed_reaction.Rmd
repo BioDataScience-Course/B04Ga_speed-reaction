@@ -2,37 +2,69 @@
 title: "Carnet de Laboratoire : Vitesse de réaction chimique"
 author: '...'
 date: "..."
-output: html_document
+output: 
+  html_document: 
+    toc: yes
+    number_sections: yes
+    code_folding: hide
 ---
 
-```{r setup, include=FALSE}
+<!--% Complétez l'entête YAML ci-dessus.-->
+
+```{r setup}
 SciViews::R
 ```
 
-<!-- Courte introduction sur l'équation de Michaelis-Menten. -->
+# Introduction 
 
-<!-- Equation --> 
+<!--% Proposez une introduction de 5 phrases sur l'équation de michaelis-Menten.-->
+
+<!--% Ajoutez l'équation de Michaelis-Menten -->
 
 $$ ... $$
 
-<!-- Importation des données. -->
+# Analyses
 
-```{r import}
+<!-- Importez vos données et ajoutez des labels et unités si cela est nécessaire. -->
 
-```
-
-<!-- Description des données. -->
-
-```{r description}
+```{r importation}
 
 ```
 
-<!-- Modélisation et description des différentes étapes. -->
+## Description des données
 
-```{r modele}
+<!--% Réalisez un graphique qui décrit la vitesse de réaction en fonction de la concentration. Interprétez votre graphique en texte Markdown juste en dessous en maximum 3 phrases. -->
+
+```{r plot1}
 
 ```
 
-<!-- Conclusion et équation paramétrée. --> 
+## Modélisation 
+
+<!--% Modélisation la réaction chimique. -->
+
+```{r model}
+
+```
+
+<!--% Proposez un résumé de votre modèle. Interprétez ce résumé en texte Markdown juste en dessous en maximum 3 phrases. -->
+
+```{r summary}
+
+```
+
+<!--% Réalisez un graphique qui décrit la vitesse de réaction en fonction de la concentration avec la courbe associée à votre modèle. Interprétez votre graphique en texte Markdown juste en dessous en maximum 3 phrases. -->
+
+```{r plot2}
+
+```
+
+<!--% Ajoutez l'équation paramétrée de votre modèle -->
+
+$$ ... $$
+
+# Discussion et conclusions
+
+<!-- Proposez une conclusion de 3 phrases maximum.--> 
 
 
